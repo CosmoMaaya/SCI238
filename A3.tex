@@ -1,0 +1,137 @@
+\documentclass[11pt]{article}
+
+\usepackage{sectsty}
+\usepackage{graphicx}
+\usepackage{amsmath}
+% \usepackage{gensymb}
+\usepackage{graphicx}
+\usepackage{accents}
+\usepackage{siunitx}
+\newcommand{\sci}[1]{\times 10^{#1}}
+
+% Margins
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\title{ SCI238 Assignment 3}
+\author{ Cosmo Zhao (20761282) }
+\date{\today}
+\begin{document}
+\maketitle
+\pagebreak
+\section*{Question 1}
+\subsection*{a}
+To determine the distance with trigonometric parallax, we can calculate the distance in parsecs:
+$$
+\begin{aligned}
+d &= \frac{1}{0.1\underline{0} \; \text{arcsec}} \\
+& = 1\underline{0} \; \text{parsec} \\
+& = 2.\underbar{0}62650 \times 10^{6} \text{ A.U.}
+\end{aligned}
+$$ 
+So these stars are about $2.\underbar{1} \sci{6}$ A.U. away from the solar system.
+\subsection*{b}
+The two stars have a constant distance apart from each other, 
+thus we can conclude that their orbits are a circle around their common center of mass.
+Therefore, their semi-major axis can be calculated using the distance from them to the solar system:
+$$
+\begin{aligned}
+    a &= \frac{1}{2} \times 5.\underbar{0} \; \text{ arcsec} \times 2.\underbar{0}62650 \sci{6} \\
+    &= \frac{1}{2} \times \frac{5.\underbar{0}}{206265} \times 2.\underbar{0}62650 \sci{6} \\
+    &= 2\underbar{5} \; \text{A.U.}
+\end{aligned}
+$$
+\subsection*{c}
+The stars move $90$ degrees for $60$ years, so we can calculate the period as follows:
+$$
+\begin{aligned}
+    P &= \frac{6\underbar{0}}{\frac{9\underbar{0} \deg}{360 \deg}}  \\
+    &= 2\underbar{4}0 \; \text{ years}
+\end{aligned}
+$$
+Since the stars have identical brightness and colours, they have identical mass, and we can then apply Kepler's third law:
+$$
+\begin{aligned}
+    &(m_1 + m_2) P^2 = (a_1 + a_2)^3 \\
+    \iff &(2m) P^2 = (2a)^3 \\
+    \iff &(2m) = \frac{(2a)^3}{P^2}\\
+    \iff & m = 4 \times \frac{2\underbar{5}^3}{2\underbar{4}0^2}\\
+    \iff & m = 4 \times \frac{\underbar{1}5625}{\underbar{5}7600} \\
+    \iff & m = 4 \times 0.\underbar{2}712673611 \\
+    \iff & m = \underbar{1}.085069444 \; M_{\odot}
+\end{aligned}
+$$
+Therefore, the mass of each star is about $1$ solar mass (we lost one significant figure due to square/cubic operation).
+\section*{Question 2}
+\subsection*{a}
+The distance can be calculated from the brightness formula
+$$
+\begin{aligned}
+    &b = \frac{L}{4\pi d^2} \\
+    \iff & d = \sqrt[2]{\frac{L}{4\pi b}}
+\end{aligned}
+$$
+For lower luminosity G2V stars, the luminosity value is $~\SI{3.0e26}{\watt}$, 
+and we use the brightness $\SI[per-mode=symbol]{3.58e-12}{\watt\per\meter^2}$. Insert those values, we get
+$$
+\begin{aligned}
+    d &= \sqrt[2]{\frac{3.\underbar{0} \sci{26}}{4 \pi \times 3.5\underbar{8}\sci{-12}}} \\
+    &= \sqrt[2]{6.\underbar{6}68503202 \sci{36}} \\
+    &= 2.5\underbar{8}2344517 \sci{18} \SI{}{\meter}
+\end{aligned}
+$$
+So the distance to this star will be around $2.5\underbar{8} \sci{18} \SI{}{\meter}$ if it is one of the lower luminosity G2V stars. 
+\subsection*{b}
+We use the same formula, but the luminosity value is $~\SI{4.8e26}{\watt}$ for higher luminosity G2V stars.
+$$
+\begin{aligned}
+    d &= \sqrt[2]{\frac{4.\underbar{8} \sci{26}}{4 \pi \times 3.5\underbar{8}\sci{-12}}} \\
+    &= \sqrt[2]{1.\underbar{0}66960512 \sci{37}} \\
+    &= 3.2\underbar{6}643615 \sci{18} \SI{}{\meter}
+\end{aligned}
+$$
+So the distance to this star will be around $3.2\underbar{7} \sci{18} \SI{}{\meter}$ if it is one of the higher luminosity G2V stars. 
+\subsection*{c}
+The "best estimate" can be calculated by the average of the higher and lower values, which is 
+$$
+\begin{aligned}
+    d_{avg} &= \frac{2.5\underbar{8}2344517 \sci{18} + 3.2\underbar{6}643615 \sci{18}}{2} \\
+    &= 2.9\underbar{2}4390334 \sci{18} \SI{}{\meter}
+\end{aligned}
+$$
+And the uncertainty is:
+$$
+\begin{aligned}
+&((2.9\underbar{2}4390334 \sci{18}-2.5\underbar{8}2344517 \sci{18})  + (3.2\underbar{6}643615 \sci{18}-2.9\underbar{2}4390334 \sci{18})) / 2 \\
+= &3.\underbar{4}20458165 \sci{17} \SI{}{\meter}
+\end{aligned}
+$$
+We calculate the relative uncertainty:
+$$
+\frac{3.\underbar{4}20458165 \sci{17}}{2.9\underbar{2}4390334 \sci{18}} = 1\underbar{1}.69631196 \%
+$$
+So the uncertainty in distance is about $3.\underbar{4} \sci{17} \SI{}{\meter}$, or about $1\underbar{2}\%$ relatively.
+\subsection*{d}
+The uncertainty for brightness is 
+$$
+\begin{aligned}
+&((3.5\underbar{8}\sci{-12} - (3.5\underbar{8}-0.0\underbar{2}) \sci{-12}) - ((3.5\underbar{8}+0.0\underbar{2}) \sci{-12} - 3.5\underbar{8}\sci{-12})) / 2 \\
+= & \underbar{2} \sci{-14} \SI[per-mode=symbol]{}{\watt\per\meter^2}
+\end{aligned}
+$$
+We calculate the relative uncertainty for luminosity:
+$$
+\frac{\underbar{2} \sci{-14}}{3.5\underbar{8}\sci{-12}} = 0.\underbar{5}5865922 \%
+$$
+The difference between them is about:
+$$
+\frac{1\underbar{1}.69631196 \%}{0.\underbar{5}5865922 \%} = \underbar{2}0.93639833
+$$
+The distance uncertainty and the uncertainty in brightness measurement are not the same.
+ In fact, the difference is pretty large.
+ The distance uncertainty is about $\underbar{2} \sci{1}$ times larger than the uncertainty in brightness measurement.
+\end{document}
