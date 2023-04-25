@@ -7,6 +7,7 @@
 \usepackage{graphicx}
 \usepackage{accents}
 \usepackage{siunitx}
+\usepackage{float}
 \newcommand{\sci}[1]{\times 10^{#1}}
 
 % Margins
@@ -38,152 +39,137 @@ For the first point:
 $$
 \begin{aligned}
 M_R &= \frac{v_r^2 R}{G} \\
-&= \frac{(20\underbar{0} \sci{3})^2 \times 5.0\underbar{0} \times 3.086 \sci{19}}{6.67 \sci{-11}}\\
-&= 9.2\underbar{5}3373313 \sci{40} kg
-% &= \frac{9.2\underbar{5}3373313 \sci{40}}{1.989 \sci{30}}
+&= \frac{(20\underline{0} \sci{3})^2 \times 5.0\underline{0} \times 3.086 \sci{19}}{6.67 \sci{-11}}\\
+&= 9.2\underline{5}3373313 \sci{40} kg
+% &= \frac{9.2\underline{5}3373313 \sci{40}}{1.989 \sci{30}}
 \end{aligned}
 $$ 
 For the second point:
 $$
 \begin{aligned}
 M_R &= \frac{v_r^2 R}{G} \\
-&= \frac{(25\underbar{3} \sci{3})^2 \times 10.\underbar{0} \times 3.086 \sci{19}}{6.67 \sci{-11}}\\
-&= 2.9\underbar{6}1495862\sci{41} kg
-% &= \frac{9.2\underbar{5}3373313 \sci{40}}{1.989 \sci{30}}
+&= \frac{(25\underline{3} \sci{3})^2 \times 10.\underline{0} \times 3.086 \sci{19}}{6.67 \sci{-11}}\\
+&= 2.9\underline{6}1495862\sci{41} kg
+% &= \frac{9.2\underline{5}3373313 \sci{40}}{1.989 \sci{30}}
 \end{aligned}
 $$
 For the third point:
 $$
 \begin{aligned}
 M_R &= \frac{v_r^2 R}{G} \\
-&= \frac{(26\underbar{1} \sci{3})^2 \times 15.\underbar{0} \times 3.086 \sci{19}}{6.67 \sci{-11}}\\
-&= 4.7\underbar{2}7617826 \sci{41} kg
-% &= \frac{9.2\underbar{5}3373313 \sci{40}}{1.989 \sci{30}}
+&= \frac{(26\underline{1} \sci{3})^2 \times 15.\underline{0} \times 3.086 \sci{19}}{6.67 \sci{-11}}\\
+&= 4.7\underline{2}7617826 \sci{41} kg
+% &= \frac{9.2\underline{5}3373313 \sci{40}}{1.989 \sci{30}}
 \end{aligned}
 $$
 For the fourth point:
 $$
 \begin{aligned}
 M_R &= \frac{v_r^2 R}{G} \\
-&= \frac{(25\underbar{9} \sci{3})^2 \times 20.\underbar{0} \times 3.086 \sci{19}}{6.67 \sci{-11}}\\
-&= 6.2\underbar{0}7255352 \sci{41} kg
-% &= \frac{9.2\underbar{5}3373313 \sci{40}}{1.989 \sci{30}}
+&= \frac{(25\underline{9} \sci{3})^2 \times 20.\underline{0} \times 3.086 \sci{19}}{6.67 \sci{-11}}\\
+&= 6.2\underline{0}7255352 \sci{41} kg
+% &= \frac{9.2\underline{5}3373313 \sci{40}}{1.989 \sci{30}}
 \end{aligned}
 $$
 For the fifth point:
 $$
 \begin{aligned}
 M_R &= \frac{v_r^2 R}{G} \\
-&= \frac{(26\underbar{8} \sci{3})^2 \times 25.\underbar{0} \times 3.086 \sci{19}}{6.67 \sci{-11}}\\
-&= 8.3\underbar{0}7678561 \sci{41} kg
-% &= \frac{9.2\underbar{5}3373313 \sci{40}}{1.989 \sci{30}}
+&= \frac{(26\underline{8} \sci{3})^2 \times 25.\underline{0} \times 3.086 \sci{19}}{6.67 \sci{-11}}\\
+&= 8.3\underline{0}7678561 \sci{41} kg
+% &= \frac{9.2\underline{5}3373313 \sci{40}}{1.989 \sci{30}}
 \end{aligned}
 $$
 So at these five points, the estiamted masses are about:
-$9.2\underbar{5} \sci{40} kg$,
-$2.9\underbar{6} \sci{41} kg$,
-$4.7\underbar{3} \sci{41} kg$,
-$6.2\underbar{1} \sci{41} kg$,
-$8.3\underbar{1} \sci{41} kg$,
+$9.2\underline{5} \sci{40} kg$,
+$2.9\underline{6} \sci{41} kg$,
+$4.7\underline{3} \sci{41} kg$,
+$6.2\underline{1} \sci{41} kg$,
+$8.3\underline{1} \sci{41} kg$,
 respectively.
 \subsection*{b}
-The two stars have a constant distance apart from each other, 
-thus we can conclude that their orbits are a circle around their common center of mass.
-Therefore, their semi-major axis can be calculated using the distance from them to the solar system:
-$$
-\begin{aligned}
-    a &= \frac{1}{2} \times 5.\underbar{0} \; \text{ arcsec} \times 2.\underbar{0}62650 \sci{6} \\
-    &= \frac{1}{2} \times \frac{5.\underbar{0}}{206265} \times 2.\underbar{0}62650 \sci{6} \\
-    &= 2\underbar{5} \; \text{A.U.}
-\end{aligned}
-$$
+
+The loglog plot is as follows, with a linear regression line.
+\begin{figure}[H]
+\centerline{\includegraphics[scale=.5]{output.png}}
+\caption{Mass measured at points in this galaxy with different radius and volocities}
+\label{fig}
+\end{figure}
+
 \subsection*{c}
-The stars move $90$ degrees for $60$ years, so we can calculate the period as follows:
+The picture above is drawn by matplotlib in Python.
+We can see that the plotted graph roughly forms a straight line.
+Then we used linear regression method with least square difference to plot the prediction line.
+The parameter given by linear regression on this line is: 
+slope 1.34, y-intersection: 92.3. 
+
+Let's consider the equation given in the background:
+
 $$
 \begin{aligned}
-    P &= \frac{6\underbar{0}}{\frac{9\underbar{0} \deg}{360 \deg}}  \\
-    &= 2\underbar{4}0 \; \text{ years}
+    M_R &= 4 \pi \rho_0 R^{3-\alpha} \\
+    \iff \log M_R &= (3-\alpha) \log R + \log 4\pi\rho_0
 \end{aligned}
 $$
-Since the stars have identical brightness and colours, they have identical mass, and we can then apply Kepler's third law:
+
+In our loglog plot, y is actually $\log M_R$, x is actually $\log R$.
+Therefore, with the linear regression line, we can conclude that:
 $$
 \begin{aligned}
-    &(m_1 + m_2) P^2 = (a_1 + a_2)^3 \\
-    \iff &(2m) P^2 = (2a)^3 \\
-    \iff &(2m) = \frac{(2a)^3}{P^2}\\
-    \iff & m = 4 \times \frac{2\underbar{5}^3}{2\underbar{4}0^2}\\
-    \iff & m = 4 \times \frac{\underbar{1}5625}{\underbar{5}7600} \\
-    \iff & m = 4 \times 0.\underbar{2}712673611 \\
-    \iff & m = \underbar{1}.085069444 \; M_{\odot}
+    3-\alpha &= 1.3\underline{4} \\
+    \iff \alpha = 1.6\underline{6}
 \end{aligned}
 $$
-Therefore, the mass of each star is about $1$ solar mass (we lost one significant figure due to square/cubic operation).
+Our estimation of the value of $\alpha$ is $1.6\underline{6}$.
+
 \section*{Question 2}
+
 \subsection*{a}
-The distance can be calculated from the brightness formula
+Let's calculate the Hubble constant from each galaxy:
+\begin{table}[H]
+\huge
+\begin{center}
+\begin{tabular}{ |c|c| } 
+ \hline
+ A & $\frac{31\underline{0} km/s}{14.\underline{0} Mpc}
+    = 22.\underline{1}4285714 \; km/(s \cdot Mpc)$\\  
+ \hline
+ B & $\frac{13\underline{5}0 km/s}{62.\underline{0} Mpc}
+    = 21.\underline{7}7419355 \; km/(s \cdot Mpc)$\\ 
+ \hline
+ C & $\frac{32\underline{5}0 km/s}{14\underline{3} Mpc}
+    = 22.\underline{7}2727273 \; km/(s \cdot Mpc)$\\ 
+ \hline
+ D & $\frac{40\underline{7}0 km/s}{18\underline{9} Mpc}
+    = 21.\underline{5}3439153 \; km/(s \cdot Mpc)$\\ 
+ \hline
+ E & $\frac{55\underline{7}0 km/s}{26\underline{9} Mpc}
+    = 20.\underline{7}063197 \; km/(s \cdot Mpc)$\\ 
+ \hline
+\end{tabular}
+\end{center}
+\end{table}
+Then, let's take the average of those values to estimate:
 $$
-\begin{aligned}
-    &b = \frac{L}{4\pi d^2} \\
-    \iff & d = \sqrt[2]{\frac{L}{4\pi b}}
-\end{aligned}
+H_0 = 
+ \frac{22.\underline{1}4285714 +
+ 21.\underline{7}7419355 +
+ 22.\underline{7}2727273 +
+ 21.\underline{5}3439153 +
+ 20.\underline{7}063197} {5}
+ = 21.\underline{7}7700693
 $$
-For lower luminosity G2V stars, the luminosity value is $~\SI{3.0e26}{\watt}$, 
-and we use the brightness $\SI[per-mode=symbol]{3.58e-12}{\watt\per\meter^2}$. Insert those values, we get
-$$
-\begin{aligned}
-    d &= \sqrt[2]{\frac{3.\underbar{0} \sci{26}}{4 \pi \times 3.5\underbar{8}\sci{-12}}} \\
-    &= \sqrt[2]{6.\underbar{6}68503202 \sci{36}} \\
-    &= 2.5\underbar{8}2344517 \sci{18} \SI{}{\meter}
-\end{aligned}
-$$
-So the distance to this star will be around $2.5\underbar{8} \sci{18} \SI{}{\meter}$ if it is one of the lower luminosity G2V stars. 
+Therefore, the Hubble Costant in this Universe should be about $21.\underline{8} \; km/(s \cdot Mpc)$.
+
 \subsection*{b}
-We use the same formula, but the luminosity value is $~\SI{4.8e26}{\watt}$ for higher luminosity G2V stars.
+Since we assume constant expansion (constant velocity), the age of this universe should be the inverse of Hubble Constant
 $$
 \begin{aligned}
-    d &= \sqrt[2]{\frac{4.\underbar{8} \sci{26}}{4 \pi \times 3.5\underbar{8}\sci{-12}}} \\
-    &= \sqrt[2]{1.\underbar{0}66960512 \sci{37}} \\
-    &= 3.2\underbar{6}643615 \sci{18} \SI{}{\meter}
+    &\frac{1}{21.\underline{7}7700693 \; km/(s \cdot Mpc)} \frac{1 \; km}{1000 \; m} \frac{3.086 \sci{22} \; m}{1 \; Mpc} \\
+    = &1.4\underline{1}7090976 \sci{18} s\\
+    = &1.4\underline{1}7090976 \sci{18} s \frac{1 \; yr}{31556952 \; sec} \frac{1 \; Gyr}{10^9 yr}\\
+    = &44.\underline{9}0582538 \; Gyr
 \end{aligned}
 $$
-So the distance to this star will be around $3.2\underbar{7} \sci{18} \SI{}{\meter}$ if it is one of the higher luminosity G2V stars. 
-\subsection*{c}
-The "best estimate" can be calculated by the average of the higher and lower values, which is 
-$$
-\begin{aligned}
-    d_{avg} &= \frac{2.5\underbar{8}2344517 \sci{18} + 3.2\underbar{6}643615 \sci{18}}{2} \\
-    &= 2.9\underbar{2}4390334 \sci{18} \SI{}{\meter}
-\end{aligned}
-$$
-And the uncertainty is:
-$$
-\begin{aligned}
-&((2.9\underbar{2}4390334 \sci{18}-2.5\underbar{8}2344517 \sci{18})  + (3.2\underbar{6}643615 \sci{18}-2.9\underbar{2}4390334 \sci{18})) / 2 \\
-= &3.\underbar{4}20458165 \sci{17} \SI{}{\meter}
-\end{aligned}
-$$
-We calculate the relative uncertainty:
-$$
-\frac{3.\underbar{4}20458165 \sci{17}}{2.9\underbar{2}4390334 \sci{18}} = 1\underbar{1}.69631196 \%
-$$
-So the uncertainty in distance is about $3.\underbar{4} \sci{17} \SI{}{\meter}$, or about $1\underbar{2}\%$ relatively.
-\subsection*{d}
-The uncertainty for brightness is 
-$$
-\begin{aligned}
-&((3.5\underbar{8}\sci{-12} - (3.5\underbar{8}-0.0\underbar{2}) \sci{-12}) - ((3.5\underbar{8}+0.0\underbar{2}) \sci{-12} - 3.5\underbar{8}\sci{-12})) / 2 \\
-= & \underbar{2} \sci{-14} \SI[per-mode=symbol]{}{\watt\per\meter^2}
-\end{aligned}
-$$
-We calculate the relative uncertainty for luminosity:
-$$
-\frac{\underbar{2} \sci{-14}}{3.5\underbar{8}\sci{-12}} = 0.\underbar{5}5865922 \%
-$$
-The difference between them is about:
-$$
-\frac{1\underbar{1}.69631196 \%}{0.\underbar{5}5865922 \%} = \underbar{2}0.93639833
-$$
-The distance uncertainty and the uncertainty in brightness measurement are not the same.
- In fact, the difference is pretty large.
- The distance uncertainty is about $\underbar{2} \sci{1}$ times larger than the uncertainty in brightness measurement.
+Therefore, the age of the universe is about $44.\underline{9} \; Gyr$
 \end{document}
